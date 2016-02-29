@@ -3,7 +3,7 @@
 ## my name is....don't tell you.
 **Hello !**
 - Nice to meet you.
-- And thet's my [weibo homepage](http://weibo.com/1807414551/profile?topnav=1&wvr=6&is_all=1) 
+- And that's my [weibo homepage](http://weibo.com/1807414551/profile?topnav=1&wvr=6&is_all=1) 
 - Welcome to follow me at sina.
 
 ## habit
