@@ -1,3 +1,54 @@
+def liu():
+  print'   #     #'
+  print'   #     #'
+  print'#######  #'
+  print' #   #   #'
+  print' #   # # #'
+  print' #   # # #'
+  print'  # #  # #'
+  print'   #     #'
+  print'  # #    #'
+  print' #   #   #'
+  print'#     #  #'
+
+def hao():
+  print'#########'
+  print'#       #'
+  print'#########'
+  print'#       #'
+  print'#########'
+  print'  #####  '
+  print'    #    '
+  print'#########'
+  print'   ###   '
+  print'  #   #  '
+  print' #     # '
+
+def tian():
+   print'   #####   '
+   print'     #     '
+   print'     #     '
+   print'     #     '
+   print'###########'
+   print'     #     '
+   print'    # #    '
+   print'   #   #   '
+   print'  #     #  '
+   print' #       # '
+   print'#         #'
+
+if __name__ == '__main__':
+   import numpy
+   a=numpy.array([[liu(),hao(),tian()],[hao(),tian(),liu()]]) 
+   # 输出一个2*3的矩阵，矩阵为 刘 昊 天；昊 天 刘。
+   print a.shape
+   # 输出矩阵的大小
+   
+### 尽管输出的矩阵是一列orz
+
+
+
+
    #     #    ########     #####
    #     #    #      #       #
 #######  #    ########       #
