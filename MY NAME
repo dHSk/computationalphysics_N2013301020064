@@ -1,50 +1,6 @@
+# 第三次作业
 ## 1.利用数组
-
-l=['#      ','#      ','#      ','#      ','#      ','#      ','#######']
-i=['###',' # ',' # ',' # ',' # ',' # ','###']
-u=['#     #','#     #','#     #','#     #','#     #',' #   # ','  ###  ']
-h=['#     #','#     #','#     #','#######','#     #','#     #','#     #']
-a=['  ###  ',' #   # ','#     #','#######','#     #','#     #','#     #']
-o=['  ###  ',' #   # ','#     #','#     #','#     #',' #   # ','  ###  ']
-t=['#######','   #   ','   #   ','   #   ','   #   ','   #   ','   #   ']
-n=['#     #','##    #','# #   #','#  #  #','#   # #','#    ##','#     #']
-_=[' ',' ',' ',' ',' ',' ',' ']
-
-dd={'l':l,'i':i,'u':u,'h':h,'a':a,'o':o,'t':t,'n':n,'_':_}
-
-record = []
-innn = []
-input = raw_input('input your name: ')
-
-innn = input
-
-j=0
-while j<len(innn):
-     record.extend(innn[j])
-     j=j+1
-
-m=1
-blank=[]
-while m<10:
-      if m<len(innn):
-         m=m+1
-      else:
-         blank.extend(['_'])
-         m=m+1
-
-ccc=[]
-
-i=0
-cc=[]
-while i<7:
-      cc=[dd[record[0]][i],dd[record[1]][i],dd[record[2]][i],dd[record[3]][i],dd[record[4]][i],dd[record[5]][i],dd[record[6]][i],dd[record[7]][i],dd[record[8]][i],dd[record[9]][i]]
-      ccc=ccc+[cc]
-      i=i+1
-
-ii=0
-while ii<7:
-      print(ccc[ii])
-      ii=ii+i
+ - 代码（[W](https://github.com/dHSk/computationalphysics_N2013301020064/blob/master/%E5%AD%97%E6%AF%8D)）
       
 ### 运行结果
  - 运行如图[watch](https://github.com/dHSk/computationalphysics_N2013301020064/blob/master/liuhaotian.png).
@@ -53,76 +9,6 @@ while ii<7:
 
 ### 为了方便，程序只支持10个以下的输入及liuhaotn_这9个字符
 
-
 ## 2.将字母写成print函数，然后调用函数
-def liu():
-  print'   #     #'
-  print'   #     #'
-  print'#######  #'
-  print' #   #   #'
-  print' #   # # #'
-  print' #   # # #'
-  print'  # #  # #'
-  print'   #     #'
-  print'  # #    #'
-  print' #   #   #'
-  print'#     #  #'
 
-def hao():
-  print'#########'
-  print'#       #'
-  print'#########'
-  print'#       #'
-  print'#########'
-  print'  #####  '
-  print'    #    '
-  print'#########'
-  print'   ###   '
-  print'  #   #  '
-  print' #     # '
-
-def tian():
-   print'   #####   '
-   print'     #     '
-   print'     #     '
-   print'     #     '
-   print'###########'
-   print'     #     '
-   print'    # #    '
-   print'   #   #   '
-   print'  #     #  '
-   print' #       # '
-   print'#         #'
-
-if __name__ == '__main__':
-   import numpy
-   a=numpy.array([[liu(),hao(),tian()],[hao(),tian(),liu()]]) 
-   # 输出一个2*3的矩阵，矩阵为 刘 昊 天；昊 天 刘。
-   print a.shape
-   # 输出矩阵的大小
-   
 ### 尽管输出的矩阵是一列orz
-
-
-
-
-   #     #    ########     #####
-   #     #    #      #       #
-#######  #    ########       #
- #   #   #    #      #       #
- #   # # #    ########  ###########
- # 　#   #     #####         #
-　# #    #       #          # #
-   #     #   #########     #   #
-  # #    #      ###       #     #
- #   #   #     #   #     #       #
-#     #  #    #     #   #         #
-
- 
-#        #  #       #   #     #    ###      ###    #######  #    ###    #     #
-#        #  #       #   #     #   #   #    #   #      #     #   #   #   ##    #
-#        #  #       #   #     #  #     #  #     #     #     #  #     #  # #   #                                             
-#        #  #       #   ####### ######### #     #     #     # ######### #  #  #                                         
-#        #  #       #   #     # #       # #     #     #     # #       # #   # #                                                 
-#        #   #     #    #     # #       #  #   #      #     # #       # #    ##
-######## #    #####     #     # #       #   ###       #     # #       # #     #
