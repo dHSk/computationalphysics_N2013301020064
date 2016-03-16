@@ -46,11 +46,11 @@ while ii<7:
       print(ccc[ii])
       ii=ii+i
 
- [运行如图：](https://github.com/dHSk/computationalphysics_N2013301020064/blob/master/liuhaotian.png)
+运行如图[watch](https://github.com/dHSk/computationalphysics_N2013301020064/blob/master/liuhaotian.png).
  
- [输入liutianhao:](https://github.com/dHSk/computationalphysics_N2013301020064/blob/master/liutianhao.png)
+输入liutianhao[watch](https://github.com/dHSk/computationalphysics_N2013301020064/blob/master/liutianhao.png).
 
-###为了方便，程序只支持10个以下的输入及liuhaotn_这9个字符
+### 为了方便，程序只支持10个以下的输入及liuhaotn_这9个字符
 
 
 ## 2.将字母写成print函数，然后调用函数
