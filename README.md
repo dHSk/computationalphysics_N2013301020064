@@ -7,7 +7,7 @@
 ### 第二次作业
 
 ### 第三次作业
- - 打出自己的名字的英文字母[watch](https://github.com/dHSk/computationalphysics_N2013301020064/blob/master/MY%20NAME)
+ - 打出自己的名字的英文字母[watch](https://github.com/dHSk/computationalphysics_N2013301020064/blob/master/%E7%AC%AC%E4%B8%89%E6%AC%A1%E4%BD%9C%E4%B8%9A.md)
 
 ## my name is....don't tell you.
 **Hello !**
