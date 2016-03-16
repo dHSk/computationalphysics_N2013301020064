@@ -1,0 +1,47 @@
+l=['#      ','#      ','#      ','#      ','#      ','#      ','#######']
+i=['###',' # ',' # ',' # ',' # ',' # ','###']
+u=['#     #','#     #','#     #','#     #','#     #',' #   # ','  ###  ']
+h=['#     #','#     #','#     #','#######','#     #','#     #','#     #']
+a=['  ###  ',' #   # ','#     #','#######','#     #','#     #','#     #']
+o=['  ###  ',' #   # ','#     #','#     #','#     #',' #   # ','  ###  ']
+t=['#######','   #   ','   #   ','   #   ','   #   ','   #   ','   #   ']
+n=['#     #','##    #','# #   #','#  #  #','#   # #','#    ##','#     #']
+_=[' ',' ',' ',' ',' ',' ',' ']
+
+dd={'l':l,'i':i,'u':u,'h':h,'a':a,'o':o,'t':t,'n':n,'_':_}
+
+record = []
+innn = []
+input = raw_input('input your name: ')
+
+innn = input
+
+j=0
+while j<len(innn):
+     record.extend(innn[j])
+     j=j+1
+
+m=1
+blank=[]
+while m<10:
+      if m<len(innn):
+         m=m+1
+      else:
+         blank.extend(['_'])
+         m=m+1
+
+ccc=[]
+
+i=0
+cc=[]
+while i<7:
+      cc=[dd[record[0]][i],dd[record[1]][i],dd[record[2]][i],dd[record[3]][i],dd[record[4]][i],dd[record[5]][i],dd[record[6]][i],dd[record[7]][i],dd[record[8]][i],dd[record[9]][i]]
+      ccc=ccc+[cc]
+      i=i+1
+
+ii=0
+while ii<7:
+      print(ccc[ii])
+      ii=ii+1
+
+
