@@ -1,5 +1,12 @@
 # computationalphysics_N2013301020064
 
+## 作业
+### 第一次作业
+    已在windows下安装狂蟒之灾，并关注了caihao/computation_physics_whu。
+### 第二次作业
+### 第三次作业
+    打出自己的名字的英文字母[watch](https://github.com/dHSk/computationalphysics_N2013301020064/blob/master/MY%20NAME)。
+
 ## my name is....don't tell you.
 **Hello !**
 - Nice to meet you.
