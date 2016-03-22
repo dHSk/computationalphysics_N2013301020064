@@ -9,6 +9,9 @@
 ### 第三次作业
  - 打出自己的名字的英文字母[watch](https://github.com/dHSk/computationalphysics_N2013301020064/blob/master/%E7%AC%AC%E4%B8%89%E6%AC%A1%E4%BD%9C%E4%B8%9A.md)
 
+### 第四次作业
+ - 课后习题第一题[watch](https://github.com/dHSk/computationalphysics_N2013301020064/tree/master/homework/4)
+
 ## my name is....don't tell you.
 **Hello !**
 - Nice to meet you.
