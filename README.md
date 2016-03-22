@@ -11,6 +11,7 @@
 
 ### 第四次作业
  - 课后习题第一题[watch](https://github.com/dHSk/computationalphysics_N2013301020064/tree/master/homework/4)
+ - 图片[watch](https://github.com/dHSk/computationalphysics_N2013301020064/blob/master/1_1.png)
 
 ## my name is....don't tell you.
 **Hello !**
