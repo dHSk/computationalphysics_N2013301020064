@@ -10,10 +10,9 @@
  - 打出自己的名字的英文字母[watch](https://github.com/dHSk/computationalphysics_N2013301020064/blob/master/%E7%AC%AC%E4%B8%89%E6%AC%A1%E4%BD%9C%E4%B8%9A.md)
 
 ### 第四次作业
- - 课后习题第一题[watch](https://github.com/dHSk/computationalphysics_N2013301020064/tree/master/homework/4)
- - 图片[watch](https://github.com/dHSk/computationalphysics_N2013301020064/blob/master/1_1.png)
+ - 课后习题第一题[watch](https://github.com/dHSk/computationalphysics_N2013301020064/blob/master/homework/4/%E7%AC%AC%E5%9B%9B%E6%AC%A1%E4%BD%9C%E4%B8%9A.md)
 
-## my name is....don't tell you.
+## my name is liu'hao'tian.
 **Hello !**
 - Nice to meet you.
 - And that's my [weibo homepage](http://weibo.com/1807414551/profile?topnav=1&wvr=6&is_all=1) 
