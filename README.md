@@ -12,6 +12,9 @@
 ### 第四次作业
  - 课后习题第一题[watch](https://github.com/dHSk/computationalphysics_N2013301020064/blob/master/homework/4/%E7%AC%AC%E5%9B%9B%E6%AC%A1%E4%BD%9C%E4%B8%9A.md)
 
+### 第五次作业
+ - 第一章课后习题第四题[1_4](https://github.com/dHSk/computationalphysics_N2013301020064/blob/master/homework/5/%E7%AC%AC%E4%BA%94%E6%AC%A1%E4%BD%9C%E4%B8%9A.md)
+
 ## my name is liu'hao'tian.
 **Hello !**
 - Nice to meet you.
