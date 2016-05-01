@@ -9,6 +9,7 @@ j = 0
 a_vx = []
 a_vy = []
 a_x = []
+a_x0 = []
 ang = 0
 init_velocity_x = []  
 init_velocity_y = []   
@@ -87,6 +88,7 @@ class precise_strike:
             if abs(d) < 100:
                 init_velocity_x.append(a_vx[-1])
                 init_velocity_y.append(a_vy[-1])
+                a_x0.append(a_x[-1])
             else:
                 pass
             i = i + 1
@@ -95,8 +97,7 @@ class precise_strike:
         k = 0
         while k < len(init_velocity_x):
             ang = math.atan(float(init_velocity_y[k]) / float(init_velocity_x[k]))
-            # 输出初始的x速度，y速度，角度
-            print init_velocity_x[k], init_velocity_y[k], ang
+            print init_velocity_x[k], init_velocity_y[k], a_x0[k], ang
             k = k + 1
     
 b = precise_strike(target_site(0, 0))
