@@ -3,7 +3,6 @@ import os
 
 g = 9.8
 b2m = 1e-5
-i = 0
 
 class flight_state:
     def __init__(self, _x = 0, _y = 0, _vx = 0, _vy = 0, _t = 0):
@@ -18,8 +17,7 @@ class cannon:
         self.cannon_flight_state = []
         self.cannon_flight_state.append(_fs)
         self.dt = _dt
-        print self.cannon_flight_state[-1].x, self.cannon_flight_state[-1].y, self.cannon_flight_state[-1].vx, self.cannon_flight_state[-1].vy
-
+        
     def next_state(self, current_state):
         global g
         next_x = current_state.x + current_state.vx * self.dt
@@ -31,8 +29,7 @@ class cannon:
     def shoot(self):
         while not(self.cannon_flight_state[-1].y < 0):
             self.cannon_flight_state.append(self.next_state(self.cannon_flight_state[-1]))
-            print self.cannon_flight_state[-1].x, self.cannon_flight_state[-1].y, self.cannon_flight_state[-1].vx, self.cannon_flight_state[-1].vy
-
+            
         r = - self.cannon_flight_state[-2].y / self.cannon_flight_state[-1].y
         self.cannon_flight_state[-1].x = (self.cannon_flight_state[-2].x + r * self.cannon_flight_state[-1].x) / (r + 1)
         self.cannon_flight_state[-1].y = 0
@@ -44,6 +41,7 @@ class cannon:
             x.append(fs.x)
             y.append(fs.y)
 
+        print x[-1], y[-1]        
         plot(x,y)
         
 class adiabatic_drag_cannon(cannon):
@@ -60,7 +58,9 @@ class adiabatic_drag_cannon(cannon):
         return flight_state(next_x, next_y, next_vx, next_vy, current_state.t + self.dt)
         
 
-def print_picture( a, _i, j):
+i = 0
+
+def print_picture( _i, j):
     global i
     while i<200:
         j = i
@@ -71,4 +71,4 @@ def print_picture( a, _i, j):
         show()
     i = os.system('cls')
     
-b = print_picture( a, _i, j) 
+b = print_picture( _i, j)
