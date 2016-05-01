@@ -95,6 +95,7 @@ class precise_strike:
         k = 0
         while k < len(init_velocity_x):
             ang = math.atan(float(init_velocity_y[k]) / float(init_velocity_x[k]))
+            # 输出初始的x速度，y速度，角度
             print init_velocity_x[k], init_velocity_y[k], ang
             k = k + 1
     
