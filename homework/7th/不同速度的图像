@@ -57,7 +57,7 @@ def different_v():
             a = bassball(flight_state(0, 0, j, j, 0), _dt = 0.1)
             a.shoot()
             a.show_trajectory()
-            show()
             i = i + 10
+        show()
 
 different_v()
