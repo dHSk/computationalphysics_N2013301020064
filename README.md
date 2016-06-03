@@ -7,16 +7,16 @@
 ### 第二次作业
 
 ### 第三次作业
- - 打出自己的名字的英文字母[watch](https://github.com/dHSk/computationalphysics_N2013301020064/blob/master/%E7%AC%AC%E4%B8%89%E6%AC%A1%E4%BD%9C%E4%B8%9A.md)
+ - [打出自己的名字的英文字母](https://github.com/dHSk/computationalphysics_N2013301020064/blob/master/%E7%AC%AC%E4%B8%89%E6%AC%A1%E4%BD%9C%E4%B8%9A.md)
 
 ### 第四次作业
- - 课后习题第一题[watch](https://github.com/dHSk/computationalphysics_N2013301020064/blob/master/homework/4/%E7%AC%AC%E5%9B%9B%E6%AC%A1%E4%BD%9C%E4%B8%9A.md)
+ - [课后习题第一题](https://github.com/dHSk/computationalphysics_N2013301020064/blob/master/homework/4/%E7%AC%AC%E5%9B%9B%E6%AC%A1%E4%BD%9C%E4%B8%9A.md)
 
 ### 第五次作业
- - 第一章课后习题第四题[1_4](https://github.com/dHSk/computationalphysics_N2013301020064/blob/master/homework/5/%E7%AC%AC%E4%BA%94%E6%AC%A1%E4%BD%9C%E4%B8%9A.md)
+ - [第一章课后习题第四题](https://github.com/dHSk/computationalphysics_N2013301020064/blob/master/homework/5/%E7%AC%AC%E4%BA%94%E6%AC%A1%E4%BD%9C%E4%B8%9A.md)
 
 ### 第六次作业
- - 精确打击[作业](https://github.com/dHSk/computationalphysics_N2013301020064/blob/master/homework/6th/%E7%AC%AC%E5%85%AD%E6%AC%A1%E4%BD%9C%E4%B8%9A.md)
+ - [精确打击](https://github.com/dHSk/computationalphysics_N2013301020064/blob/master/homework/6th/%E7%AC%AC%E5%85%AD%E6%AC%A1%E4%BD%9C%E4%B8%9A.md)
 
 ## my name is liu'hao'tian.
 **Hello !**
