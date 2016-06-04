@@ -1,0 +1,68 @@
+from pylab import *
+import numpy as np
+import matplotlib.pyplot as plt
+import mpl_toolkits.mplot3d
+
+g = 9.8
+b2m = 1e-5
+S0m = 1e-4
+w = - 1000
+
+class flight_state:
+    def __init__(self, _x = 0, _y = 0, _z=0, _vx = 0, _vy = 0, _vz=0, _t = 0):
+        self.x = _x
+        self.y = _y
+        self.z = _z
+        self.vx = _vx
+        self.vy = _vy
+        self.vz = _vz
+        self.t = _t
+
+class bassball:
+    def __init__(self, _fs = flight_state(0, 0, 0, 0, 0, 0, 0), _dt = 0.1):
+        self.bassball_flight_state = []
+        self.bassball_flight_state.append(_fs)
+        self.dt = _dt
+        print self.bassball_flight_state[-1].x, self.bassball_flight_state[-1].y, self.bassball_flight_state[-1].z, self.bassball_flight_state[-1].vx, self.bassball_flight_state[-1].vy, self.bassball_flight_state[-1].vz,
+
+    def next_state(self, current_state):
+        global g, b2m, S0m, w
+        v = sqrt(current_state.vx * current_state.vx + current_state.vy * current_state.vy)
+        next_x = current_state.x + current_state.vx * self.dt
+        next_vx = current_state.vx - S0m * w * current_state.vy * self.dt - b2m * v * current_state.vx * self.dt - S0m * w * current_state.vy * self.dt
+        next_y = current_state.y + current_state.vy * self.dt
+        next_vy = current_state.vy + S0m * w * current_state.vx * self.dt - b2m * v * current_state.vy * self.dt
+        next_z = current_state.x + current_state.vz * self.dt
+        next_vz = current_state.vz - g * self.dt - b2m * v * current_state.vz * self.dt
+        return flight_state(next_x, next_y, next_z, next_vx, next_vy, next_vz, current_state.t + self.dt)
+
+    def shoot(self):
+        while not(self.bassball_flight_state[-1].z < 0):
+            self.bassball_flight_state.append(self.next_state(self.bassball_flight_state[-1]))
+            print self.bassball_flight_state[-1].x, self.bassball_flight_state[-1].y, self.bassball_flight_state[-1].z, self.bassball_flight_state[-1].vx, self.bassball_flight_state[-1].vy, self.bassball_flight_state[-1].vz
+
+        r = - self.bassball_flight_state[-2].z / self.bassball_flight_state[-1].z
+        self.bassball_flight_state[-1].x = (self.bassball_flight_state[-2].x + r * self.bassball_flight_state[-1].x)/(r + 1)
+        self.bassball_flight_state[-1].y = (self.bassball_flight_state[-2].y + r * self.bassball_flight_state[-1].y)/(r + 1)
+        self.bassball_flight_state[-1].z = 0
+
+    def show_trajectory(self):
+        x = []
+        y = []
+        z = []
+        for fs in self.bassball_flight_state:
+            x.append(fs.x)
+            y.append(fs.y)
+            z.append(fs.z)
+            ax=plt.subplot(111,projection='3d')
+            ax.plot(x,y,z)
+            ax.scatter([x[0],x[-1]],[y[0],y[-1]],[z[0],z[-1]])
+            ax.set_xlabel('x')
+            ax.set_ylabel('y')
+            ax.set_zlabel('z')
+
+
+a = bassball(flight_state(0, 0, 2, 0, 80, 80, 0), _dt = 0.1)
+a.shoot()
+a.show_trajectory()
+show()
