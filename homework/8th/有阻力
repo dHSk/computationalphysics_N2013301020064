@@ -18,7 +18,7 @@ class pendulum:
         
     def next_state(self,current_state):
         global g,l,q
-        next_vx = current_state.vx - g * current_state.x / l - q * current_state.vx * self.dt
+        next_vx = current_state.vx - g * current_state.x * self.dt / l - q * current_state.vx * self.dt
         next_x = current_state.x + next_vx * self.dt
         return state( next_x, next_vx, current_state.t + self.dt)
         
