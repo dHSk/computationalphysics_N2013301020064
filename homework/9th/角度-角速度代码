@@ -5,7 +5,7 @@ g = 9.8
 l = 9.8
 q = 0.5
 FD = 1.2
-OMGD = 0.66
+OMGD = 2./3
 xx = 0
 
 class state:
