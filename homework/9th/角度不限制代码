@@ -1,0 +1,49 @@
+from pylab import *
+import math
+
+g = 9.8
+l = 9.8
+q = 0.5
+FD = 1.2
+OMGD = 0.66
+xx = 0
+
+class state:
+    def __init__(self, _x, _vx, _t):
+        self.x = _x
+        self.vx = _vx
+        self.t = _t
+        
+class pendulum:
+    def __init__(self, _s = state( 0, 0, 0), _dt = 0):
+        self.pendulum_state = []
+        self.pendulum_state.append(_s)
+        self.dt = _dt
+        
+    def next_state(self,current_state):
+        global g,l,q,FD,OMGD,xx
+        next_vx = current_state.vx - g * math.sin(current_state.x) * self.dt / l - q * current_state.vx * self.dt + FD * math.sin(OMGD * current_state.t) * self.dt
+        next_x = current_state.x + next_vx * self.dt
+        return state( next_x, next_vx, current_state.t + self.dt)
+        
+    def move(self):
+        while not (self.pendulum_state[-1].t > 50):
+            self.pendulum_state.append(self.next_state(self.pendulum_state[-1]))
+            
+    def trajectory(self):
+        x = []
+        vx = []
+        t = []
+        for s in self.pendulum_state:
+            x.append(s.x)
+            vx.append(s.vx)
+            t.append(s.t)
+            
+        plot(t,x)
+        xlabel('time(s)')
+        ylabel('angle(radians)')
+        
+a = pendulum(state( 0.2, 0, 0), _dt = 0.04)
+a.move()
+a.trajectory()
+show()
