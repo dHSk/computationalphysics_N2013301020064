@@ -25,7 +25,7 @@
  - [摆](https://github.com/dHSk/computationalphysics_N2013301020064/blob/master/homework/8th/%E7%AC%AC%E5%85%AB%E6%AC%A1%E4%BD%9C%E4%B8%9A.md)
 
 ### 第九次作业
- - [混沌摆的一些简单探索](https://www.zybuluo.com/2013301020064/note/399987)
+ - [混沌摆](https://www.zybuluo.com/2013301020064/note/399987)
 
 ## my name is liu'hao'tian.
 **Hello !**
