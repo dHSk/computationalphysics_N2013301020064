@@ -1,0 +1,54 @@
+from pylab import *
+import math
+import matplotlib.animation as animation
+
+class state:
+    def __init__(self, _x, _vx, _y, _vy, _t):
+        self.x = _x
+        self.vx = _vx
+        self.y = _y
+        self.vy = _vy
+        self.t = _t
+        
+class planet:
+    def __init__(self, _s = state( 0, 0, 0, 0, 0), _dt = 0):
+        self.planet_state = []
+        self.planet_state.append(_s)
+        self.dt = _dt
+        self.x = []
+        self.vx = []
+        self.y = []
+        self.vy = []
+        self.t = []
+        
+    def next_state(self,current_state):
+        next_r = math.sqrt(current_state.x * current_state.x + current_state.y * current_state.y)
+        next_vx = current_state.vx - 4 * math.pi * math.pi * current_state.x * self.dt / (next_r * next_r * next_r)
+        next_x = current_state.x + next_vx * self.dt
+        next_vy = current_state.vy - 4 * math.pi * math.pi * current_state.y * self.dt / (next_r * next_r * next_r)
+        next_y = current_state.y + next_vy * self.dt
+        return state( next_x, next_vx, next_y, next_vy, current_state.t + self.dt)
+        
+    def move(self):
+        while not (self.planet_state[-1].t > 10):
+            self.planet_state.append(self.next_state(self.planet_state[-1]))
+            
+    def trajectory(self):
+        for s in self.planet_state:
+            self.x.append(s.x)
+            self.vx.append(s.vx)
+            self.y.append(s.y)
+            self.vy.append(s.vy)
+            self.t.append(s.t)
+            
+        plot(self.x,self.y,'-b',label='star')
+        xlabel('x')
+        ylabel('y')
+        plot([self.x[-1]],[self.y[-1]],'ob',markersize=8)
+        plot(0,0,'or',markersize=20)
+        
+a = planet(state( 1, 0, 0, 2*math.pi, 0), _dt = 0.004)
+a.move()
+a.trajectory()
+show()
+       
