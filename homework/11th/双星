@@ -2,7 +2,7 @@ from numpy import *
 import matplotlib.pyplot as plt
 
 class BINARY(object):
-    def __init__(self, _m1=4*pi, _m2=2*pi, _v10=[0,2./21.*sqrt(105.*pi)], _v20=[0,-2.2/21.*sqrt(105.*pi)], _dt=0.0001, _time=5):
+    def __init__(self, _m1=2.2*pi, _m2=2*pi, _v10=[0,2./21.*sqrt(105.*pi)], _v20=[0,-2.2/21.*sqrt(105.*pi)], _dt=0.0001, _time=5):
         self.m1=_m1 
         self.m2=_m2
         self.x1, self.y1= [0.5],[0]
