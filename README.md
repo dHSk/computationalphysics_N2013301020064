@@ -30,6 +30,11 @@
 ### 第十次作业
  - [洛伦兹模型](https://www.zybuluo.com/2013301020064/note/399987)
 
+### 第十一次作业
+ - [行星的运动](https://www.zybuluo.com/2013301020064/note/407435)
+
+
+
 ## my name is liu'hao'tian.
 **Hello !**
 - Nice to meet you.
