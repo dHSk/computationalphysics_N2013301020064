@@ -33,6 +33,9 @@
 ### 第十一次作业
  - [行星的运动](https://www.zybuluo.com/2013301020064/note/407435)
 
+### 第十二次作业
+ - [简单的三体运动](https://www.zybuluo.com/2013301020064/note/411041)
+
 
 
 ## my name is liu'hao'tian.
