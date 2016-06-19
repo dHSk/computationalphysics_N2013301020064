@@ -39,6 +39,8 @@
 ### 第十三次作业
  - [电场](https://www.zybuluo.com/2013301020064/note/411242)
 
+### 第十四次作业
+ - [波的传播](https://www.zybuluo.com/2013301020064/note/412386)
 
 ## my name is liu'hao'tian.
 **Hello !**
