@@ -36,6 +36,8 @@
 ### 第十二次作业
  - [简单的三体运动](https://www.zybuluo.com/2013301020064/note/411041)
 
+### 第十三次作业
+ - [电场](https://www.zybuluo.com/2013301020064/note/411242)
 
 
 ## my name is liu'hao'tian.
