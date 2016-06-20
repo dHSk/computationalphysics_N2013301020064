@@ -42,6 +42,10 @@
 ### 第十四次作业
  - [波的传播](https://www.zybuluo.com/2013301020064/note/412386)
 
+### 期末作业
+ - [水星的进动](https://github.com/dHSk/computationalphysics_N2013301020064/blob/master/homework/final/%E6%B0%B4%E6%98%9F%E7%9A%84%E8%BF%9B%E5%8A%A8.pdf)
+ - [代码地址](https://github.com/dHSk/computationalphysics_N2013301020064/tree/master/homework/final)
+
 ## my name is liu'hao'tian.
 **Hello !**
 - Nice to meet you.
